@@ -582,7 +582,7 @@ header.sticky {
     display: flex;
     top: 200vh;
     background: #151a20;
-    background: url(/order-background.png);
+    background: url('order-background.png');
     background-size: cover;
     background-position: center;
     height: 100%;
