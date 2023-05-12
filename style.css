@@ -818,6 +818,14 @@ header.sticky {
     font-weight: 900;
     font-size: 4rem;
     margin-bottom: 7vh;
+    text-align: center;
+    transition: .5s all;
+    z-index: 5;
+}
+
+.rules h1:hover {
+    transform: translateY(10px);
+    color: #44484bbd;
 }
 
 .rules-section {
@@ -827,18 +835,18 @@ header.sticky {
 }
 
 .rules-section h3 {
-    align-items: start;
+    align-items: center;
     height: 100%;
     width: 100%;
     padding: 1vh;
-    text-align: center;
+    text-align: start;
     font-weight: 600;
     transition: 1s;
     z-index: 5;
 }
 
 .rules-section h3:hover {
-    color: #25282abd;
+    color: #44484bbd;
 }
 
 .left-side-rules {
@@ -886,13 +894,13 @@ header.sticky {
     flex: 1;
     border-radius: 50%;
     font-size: 5rem;
-    border: .3rem solid transparent;
+    border: .4rem solid transparent;
     transition: .5s;
 }
 
 .rule-item i:hover,
 .foot-rule-item i:hover {
-    border: .3rem solid #ededed;
+    border: .4rem solid #ededed;
     background: transparent;
 }
 
@@ -967,15 +975,289 @@ header.sticky {
     background-size: 50% 120px;
 }
 .waveAnimation .waveMiddle {
-    animation: move_wave 15s linear infinite;
+    animation: move_wave 13s linear infinite;
 }
 .waveBottom {
     background-size: 50% 100px;
 }
 .waveAnimation .waveBottom {
-    animation: move_wave 30s linear infinite;
+    animation: move_wave 18s linear infinite;
 }
 
+.portfolio {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 400%;
+    left: 0;
+    background: linear-gradient(180deg, #ffffff, #ededed);
+    padding: 10vh 15vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+}
+
+.portfolio h1 {
+    color: #2a2e31;
+    font-weight: 900;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+    transition: 1s;
+}
+
+.portfolio h1:hover {
+    transform: translateY(-3vh);
+    font-size: 5rem;
+    margin: 0;
+    color: #da513f;
+}
+
+.cards-portfolio {
+    position: relative;
+    margin-top: 1vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #151a200e;
+    border-radius: 0.6rem;
+}
+
+.card-portfolio {
+    margin: 2vh;
+    width: 22.5vh;
+    height: 22.5vh;
+    position: relative;
+    border-radius: 0.6rem;
+    background: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.336), inset 0px 0px 20px 2px rgba(0, 0, 0, 0.384);
+    filter: blur(.5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    transition: .5s;
+    overflow: hidden;
+    border: .4rem solid #da513f;
+}
+
+.card-portfolio::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(180deg, rgba(2,0,36,0) 47%, rgba(218,81,63,1) 100%);
+    z-index: 3;
+    transition: 1s;
+}
+
+.card-portfolio:hover::after {
+    height: 100%;
+}
+
+.card-portfolio:hover {
+    transform: translateY(-15%);
+    background-position: center;
+    background-size: cover;
+    filter: none;
+    scale: 1.7;
+    z-index: 5;
+    box-shadow: 0px 0px 18px 8px rgba(20, 24, 24, 0.623);
+    border: none;
+}
+
+.card-portfolio h2 {
+    display: none;
+    z-index: 5;
+    transition: 1s;
+}
+
+.card-portfolio.active h2 {
+    display: block;
+}
+
+.card-portfolio p {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 1vh;
+    text-align: center;
+    z-index: 5;
+    display: none;
+    transition: 1s;
+}
+
+.card-portfolio.active p {
+    display: block;
+}
+
+.contacts {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 500%;
+    left: 0;
+    background: #ededed;
+    padding: 0 15vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    justify-content: start;
+    overflow: hidden;
+}
+.wave-contact {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 20vh;
+    transform-origin: center 20vh;
+}
+
+.contacts-inf {
+    position: absolute;
+    background-color: #0a131a;
+    padding: 0 15vw;
+    padding-top: 10vh;
+    left: 0;
+    top: 25.5vh;
+    width: 100vw;
+    height: 74.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacts-inf h4 {
+    color: #ededed;
+    margin: 18px 0;
+    font-size: 20px;
+    font-weight: 600;
+    transition: all .5s ease-in;
+}
+
+.contacts-inf h4:hover {
+    opacity: .5;
+    scale: .95;
+}
+
+.contacts-inf h2 {
+    padding-top: 5vh;
+    font-size: 3rem;
+    line-height: 1;
+    transition: all 1s ease-in-out;
+}
+
+.contacts-inf h2:hover {
+    transform: translateY(-10px);
+    opacity: .4;
+}
+
+.contacts-inf h2 span {
+    color: #da513f;
+}
+
+.contacts-inf p {
+    color: #da513f;
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    transition: all .5s ease-in;
+}
+
+.contacts-inf p:hover {
+    opacity: .5;
+}
+
+.list {
+    margin-bottom: 2.8rem;
+    align-items: center;
+}
+
+.list li {
+    margin-bottom: 12px;
+    display: flex;
+}
+
+.list li a {
+    flex-direction: row;
+    color: #ededed;
+    font-size: 14px;
+    transition: all .45s ease;
+}
+
+.list li a:hover {
+    transform: translateX(5px);
+}
+
+.contact-icons a{
+    text-decoration: none;
+}
+
+.contact-icons i {
+    height: 60px;
+    width: 60px;
+    background: #ededed;
+    color: #da513f;
+    font-size: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+    transition: all .45s ease;
+}
+
+.contact-icons i:hover {
+    background: #da513f;
+    color: #ededed;
+    transform: translateY(5px);
+}
+
+.end {
+    position: absolute;
+    width: 100vw;
+    height: 10vh;
+    left: 0;
+    bottom: 0;
+    padding: 20px 15%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #151a20;
+}
+
+.last-text {
+    display: flex;
+}
+
+.last-text p {
+    color: #ededed;
+    font-size: 18px;
+}
+
+.top i {
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 15px;
+    color: #ededed;
+    background: #da513f;
+    transition: all .5s ease;
+}
+
+.top i:hover {
+    transform: translateY(-5px);
+    background: #ededed;
+    color: #da513f;
+}
 
 /*KEYFRAMES ANIMATION*/
 @keyframes move_wave {
@@ -1046,3 +1328,5 @@ header.sticky {
   *::-webkit-scrollbar-thumb:active {
     background-color: #da513f;
   }
+
+
