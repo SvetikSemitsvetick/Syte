@@ -320,7 +320,7 @@ header.sticky {
 
 .about-me {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 100vh;
     left: 0;
@@ -585,7 +585,7 @@ header.sticky {
     background: url('order-background.png');
     background-size: cover;
     background-position: center;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     flex-direction: column;
     justify-content: space-between;
@@ -804,7 +804,7 @@ header.sticky {
 .rules {
     position: absolute;
     top: 300%;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     left: 0;
     background: #151a20;
@@ -986,7 +986,7 @@ header.sticky {
 
 .portfolio {
     max-width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 400%;
     left: 0;
@@ -1084,7 +1084,7 @@ header.sticky {
 
 .contacts {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 500%;
     left: 0;
