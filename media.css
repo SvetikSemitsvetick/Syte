@@ -151,6 +151,9 @@
     .cards-portfolio {
         width: 35%;
     }
+    .order-top {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -203,6 +206,9 @@
     .contacts-inf h4 {
         font-size: 2rem;
     }
+    .order-top {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -226,5 +232,8 @@
     }
     .order-bottom {
         bottom: 5%;
+    }
+    .order-top {
+        width: 100%;
     }
 }
