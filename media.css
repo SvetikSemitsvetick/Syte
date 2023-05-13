@@ -73,3 +73,134 @@
         display: none;
     }
 }
+
+@media screen and (max-width: 725px) {
+    html {
+        font-size: 8px;
+    }
+    .home-social {
+        width: 30vw;
+    }
+    .home-social a {
+        font-size: 3rem;
+        height: 8vw;
+        width: 8vw;
+    }
+    .card-portfolio:nth-child(n+7) {
+        display: none;
+    }
+    .order {
+        align-items: center;
+        background-position: 80%;
+    }
+    .arrow {
+        display: none;
+    }
+    .order-bottom {
+        width: 80%;
+    }
+    .portfolio{
+        align-items: center;
+    }
+    .cards-portfolio {
+        width: 72%;
+    }
+    .last-text p {
+        font-size: 1rem;
+    }
+    .contacts-inf p {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .cards-portfolio {
+        width: 75%;
+    }
+    .card-portfolio:nth-child(n+7) {
+        display: none;
+    }
+    .img-hover-about {
+        display: none;
+    }
+    .order-social {
+        justify-content: space-evenly;
+    }
+    .order-text h3 {
+        font-size: 2.4rem;
+    }
+    .item p {
+        font-size: 6rem;
+    }
+    .item h5 {
+        display: none;
+    }
+    .card {
+        height: 50vh;
+    }
+    .foot-card {
+        top: 65vh;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .card-portfolio:nth-child(n+4) {
+        display: none;
+    }
+    .cards-portfolio {
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-portfolio:nth-child(n+10) {
+        display: none;
+    }
+    .home-content {
+        width: 70vw;
+    }
+    .home-content h4 {
+        font-size: 4rem;
+    }
+    .home-content h4::before, h1::before, h3::before, p::before {
+        display: none;
+    }
+    .cards-portfolio {
+        width: 61%;
+    }
+    .card {
+        width: 100%;
+    }
+    .card:first-child {
+        display: none;
+    }
+    .card-portfolio {
+        width: 50vw;
+        height: 44vw;
+    }
+    .controls button {
+        width: 5vw;
+    }
+    .item p {
+        top: auto;
+    }
+    .order-text p {
+        width: auto;
+    }
+    .order-top {
+        top: 10%;
+    }
+    .order-bottom {
+        bottom: 10%;
+    }
+    .rule-item i {
+        display: none;
+    }
+    .foot-rule-item i {
+        display: none;
+    }
+    .contacts-inf h4 {
+        font-size: 2rem;
+    }
+}
