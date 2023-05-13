@@ -1,0 +1,75 @@
+@media screen and (max-width: 1280px) {
+    html {
+        font-size: 13px;
+    }
+    .card-portfolio:nth-child(n+10) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html {
+        font-size: 12px;
+    }
+    .home-content {
+        max-width: 45vw;
+    }
+    .home, header, .about-me, .order, .portfolio, .contacts {
+        padding: 0 3vw;
+    }
+    .home-content .btn-box {
+        width: 30vw;
+    }
+    .btn-box a {
+        width: 13vw;
+    }
+    .card:first-child a {
+        width: 16vw;
+    }
+    .controls button {
+        width: 2.5vw;
+    }
+    .portfolio {
+        padding: 10vh 3vw;
+    }
+    .card-portfolio:nth-child(-n+12) {
+        display: flex;
+    }
+    .sec-about {
+        padding: 5vh 5vw;
+    }
+    .card {
+        width: 44vw;
+    }
+    .itm {
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    html {
+        font-size: 11px;
+    }
+    .card-portfolio:nth-child(n+10) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    html {
+        font-size: 10px;
+    }
+    .home {
+        background-position: 80%;
+    }
+    .card-portfolio:nth-child(n+10) {
+        display: none;
+    }
+    .contacts-inf {
+        padding: 0 3vw;
+        padding-top: 10vh;
+    }
+    .home-imgHover {
+        display: none;
+    }
+}
