@@ -1164,6 +1164,8 @@ header.sticky {
 .list {
     margin-bottom: 2.8rem;
     align-items: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .list li {
